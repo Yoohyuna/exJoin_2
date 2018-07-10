@@ -55,6 +55,6 @@ function undateInfoConfirm(){
 		return;
 	}
 	
-	document.reg_frm.submit();
+	document.reg_form.submit();
 	
 }
