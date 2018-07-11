@@ -10,13 +10,14 @@
 <body>
 
 <form action="joinOK.jsp" method="post" name="reg_form">
-아이디 : <input type="text" name="pw" size="20"><br/> 
-비밀번호 : <input type="password" name="pw_check" size="20"><br/> 
-비밀번호 확인 : <input type="password" name="id" size="20"><br/> 
+아이디 : <input type="text" name="id" size="20"><br/> 
+비밀번호 : <input type="password" name="pw" size="20"><br/> 
+비밀번호 확인 : <input type="password" name="pw_check" size="20"><br/> 
 이름 : <input type="text" name="name" size="20"><br/> 
 메일 : <input type="text" name="eMail" size="20"><br/> 
 주소 : <input type="text" name="address" size="50"><br/> 
-<input type="button" value="회원가입" onclick="infoConfirm()">&nbsp;&nbsp;&nbsp;<input type ="reset" value="취소" onclick="javascipt:window.location='login.jsp'">
+<input type="button" value="회원가입" onclick="infoConfirm()"> &nbsp;&nbsp;&nbsp; <!-- js에 만들어 놓은 메소드로 이동가능 -->
+<input type ="reset" value="취소" onclick="javascipt:window.location='login.jsp'">
 <!-- 지금까지 주로 submit. js사용시, js에 있는 infoConfirm()메소드 실행하고 정상적으로 다 되면 join.jsp로 넘김-->
 <!-- submit을 js파일에서 -->
 </form>

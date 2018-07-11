@@ -34,12 +34,12 @@ function infoConfirm(){
 		return;
 	}
 	document.reg_form.submit();
-}
+} //여기서 submit
 
 function undateInfoConfirm(){
 	if(document.reg_form.pw.value == "") {
 		alert("패스워드를 입력하세요.");
-		document.reg_form.pw.focus();
+		document.reg_form.pw.focus(); //document 있는것 없는것 차이점
 		return;
 	}
 	

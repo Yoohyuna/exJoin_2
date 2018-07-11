@@ -16,9 +16,9 @@
 	<form action="loginOK.jsp" method="post">
 		아이디 : <input type="text" name="id"
 			value="<% if(session.getAttribute("id")!= null) out.println(session.getAttribute("id")); %>"><br />
-		비밀번호 : <input type="password" name="pw"><br /> <input
-			type="submit" value="로그인">&nbsp;&nbsp; <input type="button"
-			value="회원가입" onclick="javascript:window.location='join.jsp'"> <!-- js언어.  이벤트발생시 저 링크로 가라 -->
+		비밀번호 : <input type="password" name="pw"><br />
+		<input type="submit" value="로그인">&nbsp;&nbsp; <input type="button" value="회원가입" 
+		onclick="javascript:window.location='join.jsp'"> <!-- js언어.  이벤트발생시 저 링크로 가라 -->
 	</form>
 
 

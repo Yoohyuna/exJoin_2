@@ -16,6 +16,7 @@
 			history.back();
 		</script>
 <%
+
 		} else {
 			int ri = dao.insertMember(dto);
 			if(ri == MemberDAO.MEMBER_JOIN_SUCCESS) {
