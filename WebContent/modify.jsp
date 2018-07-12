@@ -1,3 +1,6 @@
+
+<%@page import="javaex.copy.MemberDTO"%>
+<%@page import="javaex.copy.MemberDAO"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
     
@@ -14,17 +17,21 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
 <title>Insert title here</title>
+<script language="javascript" src="members.js"></script>
+<script src="members.js" charset='UTF-8'></script>
 </head>
 <body>
 
-<form action="modifyOk.jsp" method="post" name="reg_frm">
+<form action="modifyOK.jsp" method="post" name="reg_form">
 		아이디 : <%= dto.getId() %><br />
 		비밀번호 : <input type="password" name="pw" size="20"><br />
 		비밀번호 확인 : <input type="password" name="pw_check" size="20"><br />
 		이름 : <%= dto.getName() %><br />
 		메일 : <input type="text" name="eMail" size="20" value="<%= dto.geteMail() %>"><br />
 		주소 : <input type="text" name="address" size="50" value="<%= dto.getAddress() %>"><br />
-		<input type="button" value="수정" onclick="updateInfoConfirm()">&nbsp;&nbsp;&nbsp; <input type="reset" value="취소" onclick="javascript:window.location='login.jsp'">
+		<!-- <input type="button" value="수정" onclick="undateInfoConfirm()">-->
+		<input id="registerBtn" type="button" value="수정" onclick="undateInfoConfirm()">
+		&nbsp;&nbsp;&nbsp; <input type="reset" value="취소" onclick="javascript:window.location='login.jsp'">
 	</form>
 	
 </body>
