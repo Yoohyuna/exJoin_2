@@ -1,3 +1,6 @@
+
+<%@page import="javaex.copy.MemberDAO"%>
+<%@page import="javaex.copy.MemberDTO"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
     

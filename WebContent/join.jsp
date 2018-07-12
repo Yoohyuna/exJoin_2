@@ -5,7 +5,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
 <title>Join</title>
-<script language="JavaScipt" src="members.js"><</script>
+<script language="javascript" src="members.js"></script>
+<script src="members.js" charset='UTF-8'></script>
 </head>
 <body>
 
@@ -16,7 +17,8 @@
 이름 : <input type="text" name="name" size="20"><br/> 
 메일 : <input type="text" name="eMail" size="20"><br/> 
 주소 : <input type="text" name="address" size="50"><br/> 
-<input type="button" value="회원가입" onclick="infoConfirm()"> &nbsp;&nbsp;&nbsp; <!-- js에 만들어 놓은 메소드로 이동가능 -->
+<!--  <input type="button" value="회원가입" onclick="javascript:infoConfirm"> &nbsp;&nbsp;&nbsp; <!-- js에 만들어 놓은 메소드로 이동가능 -->
+<input id="registerBtn" type="button" value="회원가입" onclick="infoConfirm()">
 <input type ="reset" value="취소" onclick="javascipt:window.location='login.jsp'">
 <!-- 지금까지 주로 submit. js사용시, js에 있는 infoConfirm()메소드 실행하고 정상적으로 다 되면 join.jsp로 넘김-->
 <!-- submit을 js파일에서 -->

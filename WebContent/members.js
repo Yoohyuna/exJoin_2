@@ -1,8 +1,13 @@
-/**
- * 
- */
+/*
+
+window.onload=function(){
+	
+	
+	document.getElementById("registerBtn").addEventListener("click",infoConfirm);
+	*/
 
 function infoConfirm(){
+	
 	if(document.reg_form.id.value.length==0){
 		alert("아이디는 필수 사항 입니다.");
 		reg_form.id.focus();
@@ -18,7 +23,7 @@ function infoConfirm(){
 		reg_form.pw.focus();
 		return;
 	}
-	if(document.reg_form.pw.value != document.reg_form.pw_checked.value){
+	if(document.reg_form.pw.value != document.reg_form.pw_check.value){
 		alert("비밀번호가 일치하지 않습니다.");
 		reg_form.pw.focus();
 		return;

@@ -1,9 +1,12 @@
+
+<%@page import="javaex.copy.MemberDAO"%>
+<%@page import="javaex.copy.MemberDTO"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
     
     <% request.setCharacterEncoding("EUC-KR"); %>
 
-<jsp:useBean id="dto" class="MemberDTO" scope="page" />
+<jsp:useBean id="dto" class="javaex.copy.MemberDTO" scope="page" />
 <jsp:setProperty name="dto" property="*" />
 
 <%
