@@ -9,7 +9,6 @@ public class MemberDTO {
 	private String eMail;
 	private Timestamp rDate;
 	private String address;
-	public Timestamp getrDate;
 	
 	
 	public String getId() {
