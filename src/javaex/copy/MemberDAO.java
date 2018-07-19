@@ -45,8 +45,8 @@ public int insertMember(MemberDTO dto) {
 		pstmt.setString(2, dto.getPw());
 		pstmt.setString(3, dto.getName());
 		pstmt.setString(4, dto.geteMail());
-		pstmt.setTimestamp(6, dto.getrDate());
 		pstmt.setString(5, dto.getAddress());
+		pstmt.setTimestamp(6, dto.getrDate());
 		pstmt.executeUpdate();
 		ri = MemberDAO.MEMBER_JOIN_SUCCESS;
 	} catch (Exception e) {

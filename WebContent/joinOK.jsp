@@ -1,4 +1,3 @@
-
 <%@page import="javaex.copy.MemberDAO"%>
 <%@page import="javaex.copy.MemberDTO"%>
 <%@page import="java.sql.Timestamp"%>
@@ -6,15 +5,15 @@
     pageEncoding="EUC-KR"%>
     <%request.setCharacterEncoding("EUC-KR"); %>
     <jsp:useBean id="dto" class="javaex.copy.MemberDTO"></jsp:useBean> 
-    <jsp:setProperty name="dto" property="*"></jsp:setProperty><!-- ¸ğµç dto(»ç¿ëÇÏ·Á´Â beanÀÇ ¾ÆÀÌµğ)¸¦ setÇÏ°Ú´Ù -->
-     <!-- * : ÀÚµ¿ÀûÀ¸·Î ÀÔ·Â. dtoÀÇ º¯¼ö¸í°ú input ÅÂ±×ÀÇ ÀÌ¸§ÀÌ °°¾Æ¾ß Àû¿ë -->
+    <jsp:setProperty name="dto" property="*"></jsp:setProperty><!-- ëª¨ë“  dto(ì‚¬ìš©í•˜ë ¤ëŠ” beanì˜ ì•„ì´ë””)ë¥¼ setí•˜ê² ë‹¤ -->
+     <!-- * : ìë™ì ìœ¼ë¡œ ì…ë ¥. dtoì˜ ë³€ìˆ˜ëª…ê³¼ input íƒœê·¸ì˜ ì´ë¦„ì´ ê°™ì•„ì•¼ ì ìš© -->
 <%
 		dto.setrDate(new Timestamp(System.currentTimeMillis()));
-		MemberDAO dao = MemberDAO.getInstance(); //»ı¼ºÇÏÁö ¾Ê°í ¹Ş¾Æ¿È(singletonÆĞÅÏ)
+		MemberDAO dao = MemberDAO.getInstance(); //ìƒì„±í•˜ì§€ ì•Šê³  ë°›ì•„ì˜´(singletoníŒ¨í„´)
 		if(dao.confirmId(dto.getId()) == MemberDAO.MEMBER_EXISTENT) {
-%> <!-- »ç¿ëÀÚÇÑÅ× ¹Ş´Â°Ô ¾Æ´Ï°í ¼­¹ö¿¡¼­ ¾Ë¾Æ¼­. µû·Î ¸í½Ã -->
+%> <!-- ì‚¬ìš©ìí•œí…Œ ë°›ëŠ”ê²Œ ì•„ë‹ˆê³  ì„œë²„ì—ì„œ ì•Œì•„ì„œ. ë”°ë¡œ ëª…ì‹œ -->
 		<script language="javascript">
-			alert("¾ÆÀÌµğ°¡ ÀÌ¹Ì Á¸Àç ÇÕ´Ï´Ù.");
+			alert("ì•„ì´ë””ê°€ ì´ë¯¸ ì¡´ì¬ í•©ë‹ˆë‹¤.");
 			history.back();
 		</script>
 <%
@@ -25,14 +24,14 @@
 				session.setAttribute("id", dto.getId());
 %>
 			<script language="javascript">
-				alert("È¸¿ø°¡ÀÔÀ» ÃàÇÏ ÇÕ´Ï´Ù.");
+				alert("íšŒì›ê°€ì…ì„ ì¶•í•˜ í•©ë‹ˆë‹¤.");
 				document.location.href="login.jsp";
 			</script>
 <%
 			} else {
 %>
 			<script language="javascript">
-				alert("È¸¿ø°¡ÀÔ¿¡ ½ÇÆĞÇß½À´Ï´Ù.");
+				alert("íšŒì›ê°€ì…ì— ì‹¤íŒ¨í–ˆìŠµë‹ˆë‹¤.");
 				document.location.href="login.jsp";
 			</script>
 <%

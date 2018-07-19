@@ -1,27 +1,27 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Join</title>
 <script language="javascript" src="members.js"></script>
 <script src="members.js" charset='UTF-8'></script>
 </head>
 <body>
-
-<form action="joinOK.jsp" method="post" name="reg_form">
-¾ÆÀÌµð : <input type="text" name="id" size="20"><br/> 
-ºñ¹Ð¹øÈ£ : <input type="password" name="pw" size="20"><br/> 
-ºñ¹Ð¹øÈ£ È®ÀÎ : <input type="password" name="pw_check" size="20"><br/> 
-ÀÌ¸§ : <input type="text" name="name" size="20"><br/> 
-¸ÞÀÏ : <input type="text" name="eMail" size="20"><br/> 
-ÁÖ¼Ò : <input type="text" name="address" size="50"><br/> 
-<!--  <input type="button" value="È¸¿ø°¡ÀÔ" onclick="javascript:infoConfirm"> &nbsp;&nbsp;&nbsp; <!-- js¿¡ ¸¸µé¾î ³õÀº ¸Þ¼Òµå·Î ÀÌµ¿°¡´É -->
-<input id="registerBtn" type="button" value="È¸¿ø°¡ÀÔ" onclick="infoConfirm()">
-<input type ="reset" value="Ãë¼Ò" onclick="javascipt:window.location='login.jsp'">
-<!-- Áö±Ý±îÁö ÁÖ·Î submit. js»ç¿ë½Ã, js¿¡ ÀÖ´Â infoConfirm()¸Þ¼Òµå ½ÇÇàÇÏ°í Á¤»óÀûÀ¸·Î ´Ù µÇ¸é join.jsp·Î ³Ñ±è-->
-<!-- submitÀ» jsÆÄÀÏ¿¡¼­ -->
+${message }
+<form action="join" method="post" name="reg_form">
+ì•„ì´ë”” : <input type="text" name="id" size="20"><br/> 
+ë¹„ë°€ë²ˆí˜¸ : <input type="password" name="pw" size="20"><br/> 
+ë¹„ë°€ë²ˆí˜¸ í™•ì¸ : <input type="password" name="pw_check" size="20"><br/> 
+ì´ë¦„ : <input type="text" name="name" size="20"><br/> 
+ë©”ì¼ : <input type="text" name="eMail" size="20"><br/> 
+ì£¼ì†Œ : <input type="text" name="address" size="50"><br/> 
+<!--  <input type="button" value="íšŒì›ê°€ìž…" onclick="javascript:infoConfirm"> &nbsp;&nbsp;&nbsp; <!-- jsì— ë§Œë“¤ì–´ ë†“ì€ ë©”ì†Œë“œë¡œ ì´ë™ê°€ëŠ¥ -->
+<input id="registerBtn" type="button" value="íšŒì›ê°€ìž…" onclick="infoConfirm()">
+<input type ="reset" value="ì·¨ì†Œ" onclick="javascipt:window.location='login.jsp'">
+<!-- ì§€ê¸ˆê¹Œì§€ ì£¼ë¡œ submit. jsì‚¬ìš©ì‹œ, jsì— ìžˆëŠ” infoConfirm()ë©”ì†Œë“œ ì‹¤í–‰í•˜ê³  ì •ìƒì ìœ¼ë¡œ ë‹¤ ë˜ë©´ join.jspë¡œ ë„˜ê¹€-->
+<!-- submitì„ jsíŒŒì¼ì—ì„œ -->
 </form>
 
 </body>

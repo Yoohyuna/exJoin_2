@@ -1,24 +1,24 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-	pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <% if(session.getAttribute("ValidMem")!=null){ %>
 <jsp:forward page="main.jsp"></jsp:forward>
-<% } %> <!--¸¸¾à ÀÌ¹Ì ·Î±×ÀÎÀ» ÇÑ »óÅÂ(À¯È¿ÇÑ¸â¹öValidMem)ÀÌ¸é ·Î±×ÀÎ ´Ù½Ã ¾ÈÇÏ°í forward ¾×¼ÇÅÂ±×·Î main.jsp·Î ³Ñ±è  -->
+<% } %> <!--ë§Œì•½ ì´ë¯¸ ë¡œê·¸ì¸ì„ í•œ ìƒíƒœ(ìœ íš¨í•œë©¤ë²„ValidMem)ì´ë©´ ë¡œê·¸ì¸ ë‹¤ì‹œ ì•ˆí•˜ê³  forward ì•¡ì…˜íƒœê·¸ë¡œ main.jspë¡œ ë„˜ê¹€  -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 </head>
 <body>
+${message }
 
 
-
-	<form action="loginOK.jsp" method="post">
-		¾ÆÀÌµğ : <input type="text" name="id"
+	<form action="login" method="post">
+		ì•„ì´ë”” : <input type="text" name="id"
 			value="<% if(session.getAttribute("id")!= null) out.println(session.getAttribute("id")); %>"><br />
-		ºñ¹Ğ¹øÈ£ : <input type="password" name="pw"><br />
-		<input type="submit" value="·Î±×ÀÎ">&nbsp;&nbsp; <input type="button" value="È¸¿ø°¡ÀÔ" 
-		onclick="javascript:window.location='join.jsp'"> <!-- js¾ğ¾î.  ÀÌº¥Æ®¹ß»ı½Ã Àú ¸µÅ©·Î °¡¶ó -->
+		ë¹„ë°€ë²ˆí˜¸ : <input type="password" name="pw"><br />
+		<input type="submit" value="ë¡œê·¸ì¸">&nbsp;&nbsp; <input type="button" value="íšŒì›ê°€ì…" 
+		onclick="javascript:window.location='join.jsp'"> <!-- jsì–¸ì–´.  ì´ë²¤íŠ¸ë°œìƒì‹œ ì € ë§í¬ë¡œ ê°€ë¼ -->
 	</form>
 
 

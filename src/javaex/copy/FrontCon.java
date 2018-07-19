@@ -51,7 +51,7 @@ public class FrontCon extends HttpServlet {
 		
 		//모든작업을 받아
 		if(command.equals("/membersAll.do")) {//command별로 분류하고
-			response.setContentType("text/html; charset=EUC-KR");
+			response.setContentType("text/html; charset=UTF-8");
 			PrintWriter writer = response.getWriter();
 			writer.println("<html><head></head><body>");
 			
